@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person__data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.biodata.biodata.Person_Data"
+    android:background="#c7c4c4">
+
+    <TextView
+        android:id="@+id/person_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="22sp"/>
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:text="T.No: M46484145"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_t_number"
+                android:paddingTop="4dp" />
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:text="Name: S.Lakshmi Narayana"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_below="@id/person_t_number"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_name"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:text="Qly: MCA"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_below="@id/person_name"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_qly"
+                android:paddingTop="4dp" />
+            <LinearLayout
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/person_qly"
+                android:id="@+id/person_dob_and_height"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="DOB: 08.10.87 "
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person_dob"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Height: 5.11"
+                    android:paddingLeft="10dp"
+                    android:gravity="right"
+                    android:id="@+id/person_Height"/>
+            </LinearLayout>
+            <TextView
+                android:padding="3dp"
+                android:layout_below="@id/person_dob_and_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Color: Fair"
+                android:id="@+id/person_color"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="S.Got: Murukula"
+                android:layout_below="@id/person_color"
+                android:id="@+id/person_s_got"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="M.Got: Murukula"
+                android:layout_below="@id/person_s_got"
+                android:id="@+id/person_m_got"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_m_got"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Father's Name: Satyanarayana"
+                android:id="@+id/person_father_name"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Mother's Name: Lakshmi Tulasi"
+                android:layout_below="@id/person_father_name"
+                android:id="@+id/person_mother_name"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Village: Uppugundur"
+                android:layout_below="@id/person_mother_name"
+                android:id="@+id/person_village_name"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Mandal: Uppugundur"
+                android:layout_below="@id/person_village_name"
+                android:id="@+id/oerson_mandal_name"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Cell: 9922121223"
+                android:layout_below="@id/oerson_mandal_name"
+                android:id="@+id/person_cell"
+                android:paddingTop="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_cell"
+                android:id="@+id/person_bro_and_bro"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Bro: 1"
+                    android:id="@+id/person_bro_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Bro: 2"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:id="@+id/person_bro_2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_sis_and_sis"
+                android:layout_below="@id/person_bro_and_bro"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Sis: 1"
+                    android:layout_weight="1"
+                    android:id="@+id/person_sis_1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Sis: 1"
+                    android:gravity="right"
+                    android:id="@+id/person_sis_2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/person_sis_and_sis"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_p_and_d"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="P: 1"
+                    android:layout_weight="1"
+                    android:id="@+id/person_p"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="D: 1"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:id="@+id/person_d"/>
+            </LinearLayout>
+            <TextView
+                android:layout_below="@id/person_p_and_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Salary: 10 Lakh"
+                android:id="@+id/person_salary"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Job At: Chennai"
+                android:layout_below="@id/person_salary"
+                android:id="@+id/person_job_at"
+                android:paddingTop="4dp" />
+        </RelativeLayout>-->
+</ScrollView>

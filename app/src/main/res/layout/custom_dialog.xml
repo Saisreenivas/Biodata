@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/rectangle_shape">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"/>
+
+    <RadioGroup
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radioChoice">
+
+        <RadioButton
+            android:text="D.O.B."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dobDialog"
+            android:visibility="gone"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:id="@+id/dobDataDialog"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Above "
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="50dp"
+                android:hint="5.8"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RadioButton
+            android:text="Height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightDialog"
+            android:visibility="gone"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:id="@+id/heightAboveDialog"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Above "
+                android:textSize="20dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:visibility="visible"
+                android:layout_width="50dp"
+                android:hint="5.8"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RadioButton
+            android:text="Village"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/villageDialog"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <RadioButton
+            android:text="Mandal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mandalDialog"
+            android:layout_weight="1" />
+    </RadioGroup>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8d6e63"
+        android:layout_margin="5dp"
+        android:id="@+id/spinnerDialog">
+    </Spinner>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/ascDscOrder"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=" Asc"
+            android:id="@+id/asc"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <RadioButton
+            android:layout_width="100dp"
+            android:id="@+id/dsc"
+            android:layout_height="wrap_content"
+            android:text=" Desc"
+            android:textAppearance="?android:textAppearanceLarge"/>
+    </RadioGroup>
+
+    <TextView
+        android:text="Filter By - "
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="start"
+            android:text="All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortAllBtn"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_gravity="end"
+            android:text="Submit"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortBtn"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</LinearLayout>

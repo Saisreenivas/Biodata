@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Biodata</string>
+    <string name="tab">&amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp
+        &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp &amp;nbsp</string>
+    <string name="tab1"> &amp;#009</string>
+    <string name="space">&amp;#032</string>
+    <string name="heading">No.        T.Number        Name                     Qly.          D.O.B.    Height    Color            S.Got                           M.Got                   Father\'s Name      Mother\'s Name         Village                Mandal                           Cell                Bro     Bro   Sis     Sis     P       D   Salary                 Job At</string>
+</resources>
